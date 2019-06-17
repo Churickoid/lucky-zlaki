@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Главная</title>
+    <link rel="shortcut icon" href="img/LZ-min.png" type="image/x-icon">
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/LZ-min.png" type="image/x-icon">
 
   </head>
   <body>
@@ -16,7 +16,7 @@
 </header>
 
 <nav id="navbar">
-    <a href="http://lucky-zlaki.github.io" class="active">Главная</a>
+    <a href="http://lucky-zlakki.github.io" class="active">Главная</a>
     <a href="https://lucky-zlakki.github.io/roulette/">Кейсы</a>
     <a href="https://lucky-zlakki.github.io/partners/">Спонсоры</a>
 </nav>
@@ -29,6 +29,14 @@
 <article class="content">
 <section class="livelent">
 </section>
+
+
+
+
+
+
+
+
 
 
 
@@ -65,19 +73,45 @@
 
 
 </section>
+
+<section class="cases" id="boxes">
+<div class="segment" id="box1">
+
+<p>Если вы новичок на сайте, советуем кейс</br> "Сельский Пахарь".</p>
+</div>
+<div class="segment" id="box2">
+<p>Для тех, кто любит риск и быстрые деньги, рекомендуем  кейс </br>"Крупное Дело".</p>
+</div>
+<div class="segment" id="box3">
+<p>Если вам присытились прочие кейсы и хочется нового, подойдет "Экзотическая Услада".</p>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
 <section class="plus">
   <div id="info">
     <h1> Почему Lucky-Zlaki лучше конкурентов: </h1>
     <div class="segment" id="a1">
+      <img src="img/1.png" alt="">
 <p>Более года работы на массовом рынке.</p>
     </div>
     <div class="segment" id="a2">
+      <img src="img/2.png" alt="">
 <p>Низкие цены и регулярные скидки.</p>
     </div>
     <div class="segment" id="a3">
+      <img src="img/3.png" alt="">
 <p>Главная злачная рулетка в СНГ.</p>
     </div>
     <div class="segment" id="a4">
+      <img src="img/4.png" alt="">
 <p>Честный и прозрачный рандом.</p>
     </div>
 
@@ -89,10 +123,8 @@
 
 
 
-<section class="cases">
-<div id="type">
-
-</div>
+<section class="try">
+Тут будет кнопка
 </section>
 </article>
 
@@ -117,8 +149,7 @@
        arrows:false,
        fade:true,
      });
- </script>
-<script>
+
 window.onscroll = function() {myFunction()};
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
@@ -129,6 +160,8 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+window.onload = Cases;
 </script>
 
   </body>
