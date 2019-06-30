@@ -9,6 +9,7 @@ a{
   color:white;
 }
 header{
+min-width: 98vw;
   background:#00C864;
   position: relative;
   width: 100%;
@@ -30,6 +31,7 @@ header{
 100%{background:#00C864;}
 }
 nav{
+min-width: 98vw;
   font-weight: bold;
    font-style: normal;
   z-index: 5;
@@ -101,6 +103,7 @@ nav a.active{
 
 
 .slider{
+ min-width: 98vw;
 width: 100%;
 position: relative;
 padding-bottom: 4vh;
@@ -124,6 +127,7 @@ box-shadow: 0 0 0 white;
 .belacase{
   position:  relative;
   width: 100%;
+min-width: 98vw;
   height: 65vh;
   background: url(img/banner-1.png), url(img/banner-1x2.png), linear-gradient(#E5E5E5 5%, #B00000 80%, #068200 85%) ;
 background-size: contain ;
@@ -197,7 +201,7 @@ color: white;
 }
 
 .sale{
-
+min-width: 98vw;
   height: 65vh;
   position:  relative;
   width: 100%;
@@ -334,6 +338,7 @@ grid-row: 1/6
 
 
 .plus{
+min-width: 98vw;
   width: 100%;
 padding-top: 2%;
 padding-bottom:4%;
