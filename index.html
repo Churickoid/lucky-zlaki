@@ -80,7 +80,7 @@
 
 <p>Если вы новичок на сайте,</br> советуем кейс </br>"Сельский Пахарь".</p>
 <div class="butt">
-<a href="#">Подробнее...</a>
+<a href="https://lucky-zlakki.github.io/roulette/">Подробнее...</a>
 </div>
 </div>
 <div class="segment" id="box2">
@@ -123,11 +123,12 @@
       <img src="img/4.png" alt="">
 <p>Честный и прозрачный рандом.</p>
     </div>
-
-
-
 </div>
 </section>
+
+
+
+
 <section id="try">
 тут будет кнопка
 </section>
@@ -148,7 +149,7 @@
 <a href="mail.html"><img src="img/ml.png" alt=""> </a>
 </div>
 <div class="contacts" id="sites">
-<a href="https://lz-old.github.io"><img src="img/LZ-old.png" alt=""></a>
+<a href=""><img src="img/lz-old.png" alt=""></a>
 <a href="https://pucfoundation.github.io"><img src="img/puc.png" alt=""></a>
 </div>
 <div class="cop">
@@ -158,7 +159,6 @@
  </footer>
 
 
-</div>
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -173,10 +173,10 @@
        fade:true,
      });
 
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {Sticky()};
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
-function myFunction() {
+function Sticky() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
   } else {
