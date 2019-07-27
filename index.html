@@ -10,7 +10,9 @@
 
   </head>
   <body>
+<div id="tap">
 
+</div>
 <header>
   <img id="logo" src="img/LZ1.png" alt="">
 </header>
@@ -79,21 +81,17 @@
 <div class="segment" id="box1">
 
 <p>Если вы новичок на сайте,</br> советуем кейс </br>"Сельский Пахарь".</p>
-<div class="butt">
-<a href="https://lucky-zlakki.github.io/roulette/">Подробнее...</a>
-</div>
+<a href="https://lucky-zlakki.github.io/roulette/"></a>
+
 </div>
 <div class="segment" id="box2">
 <p>Для тех, кто любит риск ,</br> рекомендуем кейс </br>"Крупное Дело".</p>
-<div class="butt">
-<a href="#">Подробнее...</a>
-</div>
+<a href="https://lucky-zlakki.github.io/roulette/"></a>
 </div>
 <div class="segment" id="box3">
 <p>Приелись прочие кейсы?</br>Вам подойдет </br>"Экзотическая Услада".</p>
-<div class="butt">
-<a href="#">Подробнее...</a>
-</div>
+<a href="https://lucky-zlakki.github.io/roulette/"></a>
+
 </div>
 
 </section>
@@ -121,17 +119,12 @@
     </div>
     <div class="segment" id="a4">
       <img src="img/4.png" alt="">
-<p>Честный и прозрачный рандом.</p>
+<p>Честный и <br>прозрачный рандом.</p>
     </div>
 </div>
 </section>
 
 
-
-
-<section id="try">
-тут будет кнопка
-</section>
 
 
 
@@ -153,7 +146,7 @@
 <a href="https://pucfoundation.github.io"><img src="img/puc.png" alt=""></a>
 </div>
 <div class="cop">
-<p>© 20018 – 2019, Lucky-zlaki .  Все права защищены и принадлежат правообладателям.
+<p>© 2108 – 2073, Lucky-zlaki .  Все права защищены и принадлежат правообладателям.
 </p>
 </div>
  </footer>
@@ -165,8 +158,6 @@
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script type="text/javascript">
      $('.slider').slick({
-       autoplay:true,
-       autoplaySpeed:2000,
        dots:true,
        dotsClass: 'slick-dots',
        arrows:false,
@@ -183,8 +174,16 @@ function Sticky() {
     navbar.classList.remove("sticky");
   }
 }
+window.onload = function() {check()}
+function check(){
+  if (screen.height>screen.width) {
+    document.getElementById(tap).style.display ="none";
 
-
+  }
+  else {
+    document.getElementById(tap).style.display ="block";
+  }
+};
 
 </script>
 
