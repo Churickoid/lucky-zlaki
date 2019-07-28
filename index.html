@@ -10,11 +10,17 @@
 
   </head>
   <body>
-<div id="tap">
-
-</div>
 <header>
   <img id="logo" src="img/LZ1.png" alt="">
+  <div class="profile">
+<img src="img/avatar.jpg" alt="">
+<div class="stats">
+</div>
+<p id="nick">Guest</p>
+<p id="balance">Баланс: 0 руб.</p>
+<p id="freespin">Free Spins: 0</p>
+<p id="change" onclick="nickame()"> Изменить</p>
+  </div>
 </header>
 
 <nav id="navbar">
@@ -29,8 +35,7 @@
 
 
 <article class="content">
-<section class="livelent">
-</section>
+
 
 
 
@@ -174,16 +179,18 @@ function Sticky() {
     navbar.classList.remove("sticky");
   }
 }
-window.onload = function() {check()}
-function check(){
-  if (screen.height>screen.width) {
-    document.getElementById(tap).style.display ="none";
 
-  }
-  else {
-    document.getElementById(tap).style.display ="block";
-  }
-};
+var nick = localStorage["Nickname"];
+document.getElementById('nick').innerHTML = nick ;
+function nickame(){
+localStorage["Nickname"] = prompt("Введите ваше имя: ");
+nick = localStorage["Nickname"];
+document.getElementById('nick').innerHTML = nick ;
+}
+var balance = Number(localStorage["Balance"]) ;
+ document.getElementById('balance').innerHTML = "Баланс: "+ balance +" руб.";
+ var fs = Number(localStorage["FreeSpins"]);
+ document.getElementById('freespin').innerHTML = "Free Spins: "+ fs ;
 
 </script>
 
