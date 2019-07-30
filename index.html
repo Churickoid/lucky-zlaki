@@ -19,7 +19,7 @@
 <p id="nick">Guest</p>
 <p id="balance">Баланс: 0 руб.</p>
 <p id="freespin">Free Spins: 0</p>
-<p id="change" onclick="nickame()"> Изменить</p>
+<a id="change" href="http://lucky-zlakki.github.io/profile"> Профиль</a>
   </div>
 </header>
 
@@ -181,10 +181,6 @@ function Sticky() {
 }
 
 var nick = localStorage["Nickname"];
-if (nick==="undefined") {
-localStorage["Nickname"] = "Guest";
-nick= localStorage["Nickname"];
-}
 document.getElementById('nick').innerHTML = nick ;
 function nickame(){
 localStorage["Nickname"] = prompt("Введите ваше имя: ");
